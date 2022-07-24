@@ -29,8 +29,36 @@ describe('Token', () => {
 		const symbol = 'DAPP'
 		const decimals = '18'
 		const totalSupply = tokens('1000000')
+
+		it('has correct name', async () => {
+			// Read token name
+			// Check that name is correct
+			expect(await token.name()).to.equal(name)
+		})
+
+		it('has correct symbol', async () => {
+			// Read token name
+			// Check that name is correct
+			expect(await token.symbol()).to.equal(symbol)
+		})
+
+		it('has correct decimals', async () => {
+			expect(await token.decimals()).to.equal(decimals)
+		})
+
+		it('has correct total supply', async () => {
+			// const value = ethers.utils.parseUnits('1000000', 'ether')
+			// const value = tokens('1000000')
+			expect(await token.totalSupply()).to.equal(totalSupply)
+		})
+
+		it('assigns total supply to deployer', async () => {
+			expect(await token.balanceOf(deployer.address)).to.equal(totalSupply)
+		})
+
+	})
 	
-	describe('Sending Token', () => {
+	describe('Sending Tokens', () => {
 		let amount, transaction, result
 
 		describe('Success', () => {
@@ -84,36 +112,8 @@ describe('Token', () => {
 		})
 
 		
-
 	})
 
 	// Describe spending
-
-	it('has correct name', async () => {
-		// Read token name
-		// Check that name is correct
-		expect(await token.name()).to.equal(name)
-	})
-
-	it('has correct symbol', async () => {
-		// Read token name
-		// Check that name is correct
-		expect(await token.symbol()).to.equal(symbol)
-	})
-
-	it('has correct decimals', async () => {
-		expect(await token.decimals()).to.equal(decimals)
-	})
-
-	it('has correct total supply', async () => {
-		// const value = ethers.utils.parseUnits('1000000', 'ether')
-		// const value = tokens('1000000')
-		expect(await token.totalSupply()).to.equal(totalSupply)
-	})
-
-	it('assigns total supply to deployer', async () => {
-		expect(await token.balanceOf(deployer.address)).to.equal(totalSupply)
-	})
-
-	})
 })
+
