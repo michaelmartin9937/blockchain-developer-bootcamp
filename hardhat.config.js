@@ -1,5 +1,6 @@
-require("@nomicfoundation/hardhat-chai-matchers");
-require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-waffle");
+// require("@nomicfoundation/hardhat-chai-matchers");
+// require("@nomiclabs/hardhat-ethers");
 // require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 const privateKeys = process.env.PRIVATE_KEYS || ""
@@ -26,6 +27,10 @@ module.exports = {
     localhost: {},
     kovan: {
       url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      accounts: privateKeys.split(','),
+    },
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: privateKeys.split(','),
     }
   },
