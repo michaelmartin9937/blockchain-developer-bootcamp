@@ -16,31 +16,31 @@
   },
   "42": {
     "exchange": {
-      "address": "0x1772fDf12A68c91d44587C862E3b7B269bc3f8d5"
+      "address": "0xa5643Af7518dAa7CD8A02ADF3eC90D78271bf433"
     },
     "DApp": {
-      "address": "0x46829Ec78b42B477527061Af07f5eB2954eb2686"
+      "address": "0xe10D4D57DDD563dB1AFbf068C7Fb24b268B2799f"
     },
     "mETH": {
-      "address": "0xF7a26e183291d9eEac59198acEE3D6b7576Ab80f"
+      "address": "0x83326176092CDFDEf1425D66F9046618dC078F73"
     },
     "mDAI": {
-      "address": "0xDDbd72d12138C796fec47555B0DbC8B09bae7B4f"
+      "address": "0x0145a28A72eb9F8d8993DB559ea9c9e566FA1CF8"
     },
     "explorerURL": "https://kovan.etherscan.io/"
   },
    "80001": {
     "exchange": {
-      "address": "0xa96315e922c0dc529956Ab112511Eb9F3Da71299"
+      "address": "0xDDbd72d12138C796fec47555B0DbC8B09bae7B4f"
     },
     "DApp": {
-      "address": "0xd30E7ac8d32E903bf9F249Ec121Ea182e5a35cF5"
+      "address": "0x4a89CE2907Fec052245223c18b55F608405f9798"
     },
     "mETH": {
-      "address": "0x2a7195100D6784Cb9997B3398dbD7C27C3A38652"
+      "address": "0x46829Ec78b42B477527061Af07f5eB2954eb2686"
     },
     "mDAI": {
-      "address": "0x7f2D9490538a74c5353F97290F887C7598A79457"
+      "address": "0xF7a26e183291d9eEac59198acEE3D6b7576Ab80f"
     },
     "explorerURL": "https://mumbai.polygonscan.com/"
   }

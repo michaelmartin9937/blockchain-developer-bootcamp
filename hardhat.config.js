@@ -1,7 +1,8 @@
-require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-toolbox");
+// require("@nomiclabs/hardhat-waffle");
 // require("@nomicfoundation/hardhat-chai-matchers");
 // require("@nomiclabs/hardhat-ethers");
-// require("@nomicfoundation/hardhat-toolbox");
+
 require("dotenv").config();
 const privateKeys = process.env.PRIVATE_KEYS || ""
 
